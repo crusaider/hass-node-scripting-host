@@ -1,38 +1,50 @@
 {
-  "name": "node-typescript-jest-boilerplate",
+  "name": "hass-node-scripting-host",
   "version": "0.0.1",
-  "description": "NodeJS typescript + jest boilerplate",
+  "description": "Home Assistant scripting from Node applications.",
   "keywords": [
-    "boilerplate",
+    "home-assistant",
     "typescript",
-    "jest"
+    "node"
   ],
-  "author": "Brian Schlenker <bschlenk@umich.edu>",
+  "author": "Jonas Andreasson <jonas.m.andreasson@gmail.com",
   "license": "MIT",
-  "repository": "bschlenk/node-typescript-jest-boilerplate",
+  "repository": "crusaider/hass-node-scripting-host",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
-    "!**/__tests__/**/*"
+    "dist/Samples",
+    "!**/*.map",
+    "!**/*.spec.*"
   ],
   "scripts": {
-    "clean": "rm -rf build coverage",
+    "clean": "rm -rf dist coverage docs",
     "lint": "eslint --ext .ts src",
     "lint:fix": "npm run lint -- --fix",
     "test:unit": "jest",
-    "test:watch": "npm run jest -- --watch",
+    "test:watch": "jest --watch",
     "test": "npm run lint && npm run test:unit",
     "watch": "nodemon",
     "build": "tsc",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepublishOnly": "npm run clean && npm run test && npm run build",
+    "docs": "typedoc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "home-assistant-js-websocket": "^5.7.0",
+    "rxjs": "^6.6.3",
+    "ws": "^7.4.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@types/axios": "^0.14.0",
+    "@types/dotenv": "^8.2.0",
     "@types/jest": "^26.0.16",
     "@types/node": "^14.14.10",
+    "@types/ws": "^7.4.0",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "eslint": "^7.14.0",
@@ -45,6 +57,8 @@
     "prettier": "^2.2.1",
     "ts-jest": "^26.4.4",
     "ts-node": "^9.0.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typedoc": "^0.19.2",
     "typescript": "^4.1.2"
   },
   "husky": {

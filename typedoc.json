@@ -1,0 +1,13 @@
+{
+  "out": "docs",
+  "inputFiles": [
+    "./src"
+  ],
+  "exclude": [
+    "**/*+(index|.spec|.e2e).ts",
+    "**/Samples/*"
+  ],
+  "excludeNotExported": true,
+  "stripInternal": true,
+  "name": ""
+}
