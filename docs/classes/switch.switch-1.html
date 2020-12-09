@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Weather | hass-node-scripting-host</title>
+	<title>Switch | hass-node-scripting-host</title>
 	<meta name="description" content="Documentation for hass-node-scripting-host">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_weather_weather_.html">&quot;Weather/Weather&quot;</a>
+					<a href="../modules/switch.html">Switch</a>
 				</li>
 				<li>
-					<a href="_weather_weather_.weather.html">Weather</a>
+					<a href="switch.switch-1.html">Switch</a>
 				</li>
 			</ul>
-			<h1>Class Weather</h1>
+			<h1>Class Switch</h1>
 		</div>
 	</div>
 </header>
@@ -71,10 +71,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_hainstance_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"string"</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="hainstance.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"on"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"off"</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">Weather</span>
+								<span class="target">Switch</span>
 							</li>
 						</ul>
 					</li>
@@ -83,7 +83,8 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">Subscribable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><span class="tsd-signature-type">Subscribable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/switch.switchservice.html" class="tsd-signature-type">SwitchService</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -93,51 +94,58 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_weather_weather_.weather.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="switch.switch-1.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_weather_weather_.weather.html#_entity" class="tsd-kind-icon">_entity</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#_isscalar" class="tsd-kind-icon">_is<wbr>Scalar</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_weather_weather_.weather.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_weather_weather_.weather.html#instance" class="tsd-kind-icon">instance</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#operator" class="tsd-kind-icon">operator</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_weather_weather_.weather.html#restclient" class="tsd-kind-icon">rest<wbr>Client</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#source" class="tsd-kind-icon">source</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#state_" class="tsd-kind-icon">state$</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_weather_weather_.weather.html#create" class="tsd-kind-icon">create</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_weather_weather_.weather.html#if" class="tsd-kind-icon">if</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_weather_weather_.weather.html#throw" class="tsd-kind-icon">throw</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="switch.switch-1.html#_entity" class="tsd-kind-icon">_entity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#_isscalar" class="tsd-kind-icon">_is<wbr>Scalar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="switch.switch-1.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="switch.switch-1.html#instance" class="tsd-kind-icon">instance</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#operator" class="tsd-kind-icon">operator</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="switch.switch-1.html#restclient" class="tsd-kind-icon">rest<wbr>Client</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#source" class="tsd-kind-icon">source</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#state_" class="tsd-kind-icon">state$</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="switch.switch-1.html#create" class="tsd-kind-icon">create</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="switch.switch-1.html#if" class="tsd-kind-icon">if</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="switch.switch-1.html#throw" class="tsd-kind-icon">throw</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#assumedstate" class="tsd-kind-icon">assumed<wbr>State</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#deviceclass" class="tsd-kind-icon">device<wbr>Class</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#entity" class="tsd-kind-icon">entity</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#entitypicture" class="tsd-kind-icon">entity<wbr>Picture</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#friendlyname" class="tsd-kind-icon">friendly<wbr>Name</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#hidden" class="tsd-kind-icon">hidden</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#icon" class="tsd-kind-icon">icon</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#state" class="tsd-kind-icon">state</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#supportedfeatures" class="tsd-kind-icon">supported<wbr>Features</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#unitofmeasurement" class="tsd-kind-icon">unit<wbr>OfMeasurement</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#assumedstate" class="tsd-kind-icon">assumed<wbr>State</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="switch.switch-1.html#currentpowerw" class="tsd-kind-icon">current<wbr>PowerW</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#deviceclass" class="tsd-kind-icon">device<wbr>Class</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#entity" class="tsd-kind-icon">entity</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#entitypicture" class="tsd-kind-icon">entity<wbr>Picture</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#friendlyname" class="tsd-kind-icon">friendly<wbr>Name</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#hidden" class="tsd-kind-icon">hidden</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#icon" class="tsd-kind-icon">icon</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="switch.switch-1.html#ison" class="tsd-kind-icon">is<wbr>On</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="switch.switch-1.html#isstandby" class="tsd-kind-icon">is<wbr>Standby</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#supportedfeatures" class="tsd-kind-icon">supported<wbr>Features</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="switch.switch-1.html#totalenergykwh" class="tsd-kind-icon">total<wbr>Energy<wbr>Kwh</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#unitofmeasurement" class="tsd-kind-icon">unit<wbr>OfMeasurement</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#_trysubscribe" class="tsd-kind-icon">_try<wbr>Subscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#foreach" class="tsd-kind-icon">for<wbr>Each</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_weather_weather_.weather.html#getattribute" class="tsd-kind-icon">get<wbr>Attribute</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_weather_weather_.weather.html#lift" class="tsd-kind-icon">lift</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_weather_weather_.weather.html#pipe" class="tsd-kind-icon">pipe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_weather_weather_.weather.html#topromise" class="tsd-kind-icon">to<wbr>Promise</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_weather_weather_.weather.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#_trysubscribe" class="tsd-kind-icon">_try<wbr>Subscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#foreach" class="tsd-kind-icon">for<wbr>Each</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="switch.switch-1.html#getattribute" class="tsd-kind-icon">get<wbr>Attribute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="switch.switch-1.html#lift" class="tsd-kind-icon">lift</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="switch.switch-1.html#pipe" class="tsd-kind-icon">pipe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="switch.switch-1.html#topromise" class="tsd-kind-icon">to<wbr>Promise</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="switch.switch-1.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="switch.switch-1.html#toggle" class="tsd-kind-icon">toggle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="switch.switch-1.html#turnoff" class="tsd-kind-icon">turn<wbr>Off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="switch.switch-1.html#turnon" class="tsd-kind-icon">turn<wbr>On</a></li>
 							</ul>
 						</section>
 					</div>
@@ -149,26 +157,26 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Weather<span class="tsd-signature-symbol">(</span>instance<span class="tsd-signature-symbol">: </span><a href="_hainstance_hainstance_.hainstance.html" class="tsd-signature-type">HAInstance</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_weather_weather_.weather.html" class="tsd-signature-type">Weather</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Switch<span class="tsd-signature-symbol">(</span>instance<span class="tsd-signature-symbol">: </span><a href="hainstance.hainstance-1.html" class="tsd-signature-type">HAInstance</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="switch.switch-1.html" class="tsd-signature-type">Switch</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#constructor">constructor</a></p>
+								<p>Overrides <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in src/Weather/Weather.ts:5</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L8">src/Switch/Switch.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>instance: <a href="_hainstance_hainstance_.hainstance.html" class="tsd-signature-type">HAInstance</a></h5>
+									<h5>instance: <a href="hainstance.hainstance-1.html" class="tsd-signature-type">HAInstance</a></h5>
 								</li>
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_weather_weather_.weather.html" class="tsd-signature-type">Weather</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="switch.switch-1.html" class="tsd-signature-type">Switch</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -178,11 +186,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_entity" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _entity</h3>
-					<div class="tsd-signature tsd-kind-icon">_entity<span class="tsd-signature-symbol">:</span> <a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">_entity<span class="tsd-signature-symbol">:</span> <a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#_entity">_entity</a></p>
+						<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#_entity">_entity</a></p>
 						<ul>
-							<li>Defined in src/HAInstance/Entity.ts:45</li>
+							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L45">src/HAInstance/Entity.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -191,7 +199,7 @@
 					<h3>_is<wbr>Scalar</h3>
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Scalar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#_isscalar">_isScalar</a></p>
+						<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#_isscalar">_isScalar</a></p>
 						<ul>
 							<li>Defined in node_modules/rxjs/internal/Observable.d.ts:15</li>
 						</ul>
@@ -207,29 +215,29 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#id">id</a></p>
+						<p>Overrides <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#id">id</a></p>
 						<ul>
-							<li>Defined in src/Weather/Weather.ts:6</li>
+							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L11">src/Switch/Switch.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 					<a name="instance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> instance</h3>
-					<div class="tsd-signature tsd-kind-icon">instance<span class="tsd-signature-symbol">:</span> <a href="_hainstance_hainstance_.hainstance.html" class="tsd-signature-type">HAInstance</a></div>
+					<div class="tsd-signature tsd-kind-icon">instance<span class="tsd-signature-symbol">:</span> <a href="hainstance.hainstance-1.html" class="tsd-signature-type">HAInstance</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#instance">instance</a></p>
+						<p>Overrides <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#instance">instance</a></p>
 						<ul>
-							<li>Defined in src/Weather/Weather.ts:6</li>
+							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L10">src/Switch/Switch.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="operator" class="tsd-anchor"></a>
 					<h3>operator</h3>
-					<div class="tsd-signature tsd-kind-icon">operator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Operator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">operator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Operator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#operator">operator</a></p>
+						<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#operator">operator</a></p>
 						<ul>
 							<li>Defined in node_modules/rxjs/internal/Observable.d.ts:19</li>
 						</ul>
@@ -245,11 +253,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="restclient" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> rest<wbr>Client</h3>
-					<div class="tsd-signature tsd-kind-icon">rest<wbr>Client<span class="tsd-signature-symbol">:</span> <a href="_restclient_restclient_.restclient.html" class="tsd-signature-type">RESTClient</a></div>
+					<div class="tsd-signature tsd-kind-icon">rest<wbr>Client<span class="tsd-signature-symbol">:</span> <a href="restclient.restclient-1.html" class="tsd-signature-type">RESTClient</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#restclient">restClient</a></p>
+						<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#restclient">restClient</a></p>
 						<ul>
-							<li>Defined in src/HAInstance/Entity.ts:43</li>
+							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L43">src/HAInstance/Entity.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -258,7 +266,7 @@
 					<h3>source</h3>
 					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#source">source</a></p>
+						<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#source">source</a></p>
 						<ul>
 							<li>Defined in node_modules/rxjs/internal/Observable.d.ts:17</li>
 						</ul>
@@ -276,9 +284,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> state$</h3>
 					<div class="tsd-signature tsd-kind-icon">state$<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.pipe(state&lt;S&gt;())</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#state_">state$</a></p>
+						<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#state_">state$</a></p>
 						<ul>
-							<li>Defined in src/HAInstance/Entity.ts:80</li>
+							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L80">src/HAInstance/Entity.ts:80</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -297,7 +305,7 @@
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create</h3>
 					<div class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#create">create</a></p>
+						<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#create">create</a></p>
 						<ul>
 							<li>Defined in node_modules/rxjs/internal/Observable.d.ts:38</li>
 						</ul>
@@ -335,7 +343,7 @@
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> if</h3>
 					<div class="tsd-signature tsd-kind-icon">if<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">iif</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#if">if</a></p>
+						<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#if">if</a></p>
 						<ul>
 							<li>Defined in node_modules/rxjs/internal/Observable.d.ts:71</li>
 						</ul>
@@ -355,7 +363,7 @@
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> throw</h3>
 					<div class="tsd-signature tsd-kind-icon">throw<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">throwError</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#throw">throw</a></p>
+						<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#throw">throw</a></p>
 						<ul>
 							<li>Defined in node_modules/rxjs/internal/Observable.d.ts:76</li>
 						</ul>
@@ -371,7 +379,7 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="assumedstate" class="tsd-anchor"></a>
@@ -382,12 +390,29 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#assumedstate">assumedState</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#assumedstate">assumedState</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:108</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L108">src/HAInstance/Entity.ts:108</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="currentpowerw" class="tsd-anchor"></a>
+					<h3>current<wbr>PowerW</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> currentPowerW<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L20">src/Switch/Switch.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -400,9 +425,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#deviceclass">deviceClass</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#deviceclass">deviceClass</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:112</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L112">src/HAInstance/Entity.ts:112</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -413,14 +438,14 @@
 					<a name="entity" class="tsd-anchor"></a>
 					<h3>entity</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> entity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> entity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#entity">entity</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#entity">entity</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:54</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L54">src/HAInstance/Entity.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -435,7 +460,7 @@
 									</dd>
 								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -448,9 +473,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#entitypicture">entityPicture</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#entitypicture">entityPicture</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:96</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L96">src/HAInstance/Entity.ts:96</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -466,9 +491,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#friendlyname">friendlyName</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#friendlyname">friendlyName</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:84</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L84">src/HAInstance/Entity.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -484,9 +509,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#hidden">hidden</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#hidden">hidden</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:104</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L104">src/HAInstance/Entity.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -502,12 +527,46 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#icon">icon</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#icon">icon</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:92</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L92">src/HAInstance/Entity.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="ison" class="tsd-anchor"></a>
+					<h3>is<wbr>On</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isOn<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L16">src/Switch/Switch.ts:16</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="isstandby" class="tsd-anchor"></a>
+					<h3>is<wbr>Standby</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isStandby<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L28">src/Switch/Switch.ts:28</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -515,14 +574,14 @@
 					<a name="state" class="tsd-anchor"></a>
 					<h3>state</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> state<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"string"</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> state<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"on"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"off"</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#state">state</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#state">state</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:67</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L67">src/HAInstance/Entity.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -537,7 +596,7 @@
 									</dd>
 								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"string"</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"on"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"off"</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -550,9 +609,26 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#supportedfeatures">supportedFeatures</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#supportedfeatures">supportedFeatures</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:100</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L100">src/HAInstance/Entity.ts:100</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="totalenergykwh" class="tsd-anchor"></a>
+					<h3>total<wbr>Energy<wbr>Kwh</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> totalEnergyKwh<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L24">src/Switch/Switch.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -568,9 +644,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#unitofmeasurement">unitOfMeasurement</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#unitofmeasurement">unitOfMeasurement</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:88</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L88">src/HAInstance/Entity.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -578,18 +654,18 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="_trysubscribe" class="tsd-anchor"></a>
 					<h3>_try<wbr>Subscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">_try<wbr>Subscribe<span class="tsd-signature-symbol">(</span>sink<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscriber</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TeardownLogic</span></li>
+						<li class="tsd-signature tsd-kind-icon">_try<wbr>Subscribe<span class="tsd-signature-symbol">(</span>sink<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscriber</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TeardownLogic</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#_trysubscribe">_trySubscribe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#_trysubscribe">_trySubscribe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:56</li>
 								</ul>
@@ -604,7 +680,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>sink: <span class="tsd-signature-type">Subscriber</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>sink: <span class="tsd-signature-type">Subscriber</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TeardownLogic</span></h4>
@@ -615,12 +691,12 @@
 					<a name="foreach" class="tsd-anchor"></a>
 					<h3>for<wbr>Each</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, promiseCtor<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PromiseConstructorLike</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, promiseCtor<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PromiseConstructorLike</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#foreach">forEach</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#foreach">forEach</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:64</li>
 								</ul>
@@ -635,21 +711,21 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>next: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>next: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>a handler for each value emitted by the observable</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>value: <a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a></h5>
+															<h5>value: <a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -677,9 +753,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#getattribute">getAttribute</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#getattribute">getAttribute</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:71</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L71">src/HAInstance/Entity.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -702,12 +778,12 @@
 					<a name="lift" class="tsd-anchor"></a>
 					<h3>lift</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">lift&lt;R&gt;<span class="tsd-signature-symbol">(</span>operator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Operator</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">lift&lt;R&gt;<span class="tsd-signature-symbol">(</span>operator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Operator</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#lift">lift</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#lift">lift</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:46</li>
 								</ul>
@@ -732,7 +808,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>operator: <span class="tsd-signature-type">Operator</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>operator: <span class="tsd-signature-type">Operator</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the operator defining the operation to take on the observable</p>
 									</div>
@@ -747,31 +823,31 @@
 					<a name="pipe" class="tsd-anchor"></a>
 					<h3>pipe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">pipe<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, op7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G, H&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, op7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, op8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G, H, I&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, op7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, op8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span>, op9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G, H, I&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, op7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, op8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span>, op9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span>, <span class="tsd-signature-symbol">...</span>operations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, op7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G, H&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, op7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, op8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G, H, I&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, op7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, op8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span>, op9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G, H, I&gt;<span class="tsd-signature-symbol">(</span>op1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span>, op2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, op3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, op4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, op5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, op6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, op7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, op8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span>, op9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span>, <span class="tsd-signature-symbol">...</span>operations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:77</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:78</li>
 								</ul>
@@ -785,14 +861,14 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:79</li>
 								</ul>
@@ -809,7 +885,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>op2: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -819,7 +895,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:80</li>
 								</ul>
@@ -839,7 +915,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>op2: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -852,7 +928,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:81</li>
 								</ul>
@@ -875,7 +951,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>op2: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -891,7 +967,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:82</li>
 								</ul>
@@ -917,7 +993,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>op2: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -936,7 +1012,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:83</li>
 								</ul>
@@ -965,7 +1041,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>op2: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -987,7 +1063,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:84</li>
 								</ul>
@@ -1019,7 +1095,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>op2: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -1044,7 +1120,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:85</li>
 								</ul>
@@ -1079,7 +1155,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>op2: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -1107,7 +1183,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:86</li>
 								</ul>
@@ -1145,7 +1221,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>op2: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -1176,7 +1252,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#pipe">pipe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#pipe">pipe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:87</li>
 								</ul>
@@ -1214,7 +1290,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>op1: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>op2: <span class="tsd-signature-type">OperatorFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -1252,16 +1328,16 @@
 					<a name="subscribe" class="tsd-anchor"></a>
 					<h3>subscribe</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>observer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PartialObserver</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscription</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>observer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PartialObserver</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscription</span></li>
 						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, complete<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscription</span></li>
 						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, complete<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscription</span></li>
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, complete<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscription</span></li>
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>next<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span>, error<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span>, complete<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscription</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, complete<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscription</span></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>next<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span>, error<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span>, complete<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Subscription</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#subscribe">subscribe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#subscribe">subscribe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:47</li>
 								</ul>
@@ -1269,14 +1345,14 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> observer: <span class="tsd-signature-type">PartialObserver</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> observer: <span class="tsd-signature-type">PartialObserver</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Subscription</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#subscribe">subscribe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#subscribe">subscribe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:49</li>
 								</ul>
@@ -1316,7 +1392,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#subscribe">subscribe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#subscribe">subscribe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:51</li>
 								</ul>
@@ -1362,7 +1438,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#subscribe">subscribe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#subscribe">subscribe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:53</li>
 								</ul>
@@ -1377,18 +1453,18 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>next: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>next: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>value: <a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a></h5>
+															<h5>value: <a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1420,7 +1496,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#subscribe">subscribe</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#subscribe">subscribe</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:54</li>
 								</ul>
@@ -1428,7 +1504,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> next: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_weather_weatherentity_.html#weatherentity" class="tsd-signature-type">WeatherEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> next: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/switch.html#switchentity" class="tsd-signature-type">SwitchEntity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> error: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
@@ -1452,7 +1528,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#topromise">toPromise</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#topromise">toPromise</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:88</li>
 								</ul>
@@ -1473,7 +1549,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#topromise">toPromise</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#topromise">toPromise</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:89</li>
 								</ul>
@@ -1497,7 +1573,7 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#topromise">toPromise</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#topromise">toPromise</a></p>
 								<ul>
 									<li>Defined in node_modules/rxjs/internal/Observable.d.ts:90</li>
 								</ul>
@@ -1530,9 +1606,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_hainstance_entity_.entity.html">Entity</a>.<a href="_hainstance_entity_.entity.html#tostring">toString</a></p>
+								<p>Inherited from <a href="hainstance.entity.html">Entity</a>.<a href="hainstance.entity.html#tostring">toString</a></p>
 								<ul>
-									<li>Defined in src/HAInstance/Entity.ts:118</li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/Entity.ts#L118">src/HAInstance/Entity.ts:118</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1545,6 +1621,57 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="toggle" class="tsd-anchor"></a>
+					<h3>toggle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toggle<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L46">src/Switch/Switch.ts:46</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="turnoff" class="tsd-anchor"></a>
+					<h3>turn<wbr>Off</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">turn<wbr>Off<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L40">src/Switch/Switch.ts:40</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="turnon" class="tsd-anchor"></a>
+					<h3>turn<wbr>On</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">turn<wbr>On<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/Switch/Switch.ts#L34">src/Switch/Switch.ts:34</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -1553,68 +1680,32 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_abstractservice_.html">&quot;<wbr>Abstract<wbr>Service&quot;</a>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/reflection-1183.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_accesstoken_.html">&quot;<wbr>Access<wbr>Token&quot;</a>
+						<a href="../modules/hainstance.html">HAInstance</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_hainstance_entity_.html">&quot;HAInstance/<wbr>Entity&quot;</a>
+						<a href="../modules/light.html">Light</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_hainstance_hainstance_.html">&quot;HAInstance/HAInstance&quot;</a>
+						<a href="../modules/restclient.html">RESTClient</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_hainstance_createsocketfactory_.html">&quot;HAInstance/create<wbr>Socket<wbr>Factory&quot;</a>
+						<a href="../modules/sensor.html">Sensor</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_light_light_.html">&quot;<wbr>Light/<wbr>Light&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_light_lightentity_.html">&quot;<wbr>Light/<wbr>Light<wbr>Entity&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_light_lightservice_.html">&quot;<wbr>Light/<wbr>Light<wbr>Service&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_restclient_httpclient_.html">&quot;RESTClient/<wbr>Http<wbr>Client&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_restclient_restclient_.html">&quot;RESTClient/<wbr>Rest<wbr>Client&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_sensor_sensorentity_.html">&quot;<wbr>Sensor/<wbr>Sensor<wbr>Entity&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_services_sceneservice_.html">&quot;<wbr>Services/<wbr>Scene<wbr>Service&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_statechangedevent_.html">&quot;<wbr>State<wbr>Changed<wbr>Event&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_switch_switch_.html">&quot;<wbr>Switch/<wbr>Switch&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_switch_switchentity_.html">&quot;<wbr>Switch/<wbr>Switch<wbr>Entity&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_switch_switchservice_.html">&quot;<wbr>Switch/<wbr>Switch<wbr>Service&quot;</a>
+						<a href="../modules/services.html">Services</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/_weather_weather_.html">&quot;<wbr>Weather/<wbr>Weather&quot;</a>
+						<a href="../modules/switch.html">Switch</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_weather_weatherentity_.html">&quot;<wbr>Weather/<wbr>Weather<wbr>Entity&quot;</a>
+						<a href="../modules/weather.html">Weather</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/_rx_operators_attribute_.html">&quot;rx-<wbr>operators/attribute&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_rx_operators_newstate_.html">&quot;rx-<wbr>operators/new<wbr>State&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_rx_operators_state_.html">&quot;rx-<wbr>operators/state&quot;</a>
+						<a href="../modules/rx_operators.html">rx-<wbr>operators</a>
 					</li>
 				</ul>
 			</nav>
@@ -1623,102 +1714,129 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="_weather_weather_.weather.html" class="tsd-kind-icon">Weather</a>
+						<a href="switch.switch-1.html" class="tsd-kind-icon">Switch</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_weather_weather_.weather.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="switch.switch-1.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_weather_weather_.weather.html#_entity" class="tsd-kind-icon">_entity</a>
+								<a href="switch.switch-1.html#_entity" class="tsd-kind-icon">_entity</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#_isscalar" class="tsd-kind-icon">_is<wbr>Scalar</a>
+								<a href="switch.switch-1.html#_isscalar" class="tsd-kind-icon">_is<wbr>Scalar</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_weather_weather_.weather.html#id" class="tsd-kind-icon">id</a>
+								<a href="switch.switch-1.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-								<a href="_weather_weather_.weather.html#instance" class="tsd-kind-icon">instance</a>
+								<a href="switch.switch-1.html#instance" class="tsd-kind-icon">instance</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#operator" class="tsd-kind-icon">operator</a>
+								<a href="switch.switch-1.html#operator" class="tsd-kind-icon">operator</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_weather_weather_.weather.html#restclient" class="tsd-kind-icon">rest<wbr>Client</a>
+								<a href="switch.switch-1.html#restclient" class="tsd-kind-icon">rest<wbr>Client</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#source" class="tsd-kind-icon">source</a>
+								<a href="switch.switch-1.html#source" class="tsd-kind-icon">source</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#state_" class="tsd-kind-icon">state$</a>
+								<a href="switch.switch-1.html#state_" class="tsd-kind-icon">state$</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_weather_weather_.weather.html#create" class="tsd-kind-icon">create</a>
+								<a href="switch.switch-1.html#create" class="tsd-kind-icon">create</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_weather_weather_.weather.html#if" class="tsd-kind-icon">if</a>
+								<a href="switch.switch-1.html#if" class="tsd-kind-icon">if</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_weather_weather_.weather.html#throw" class="tsd-kind-icon">throw</a>
+								<a href="switch.switch-1.html#throw" class="tsd-kind-icon">throw</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#assumedstate" class="tsd-kind-icon">assumed<wbr>State</a>
+								<a href="switch.switch-1.html#assumedstate" class="tsd-kind-icon">assumed<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="switch.switch-1.html#currentpowerw" class="tsd-kind-icon">current<wbr>PowerW</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#deviceclass" class="tsd-kind-icon">device<wbr>Class</a>
+								<a href="switch.switch-1.html#deviceclass" class="tsd-kind-icon">device<wbr>Class</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#entity" class="tsd-kind-icon">entity</a>
+								<a href="switch.switch-1.html#entity" class="tsd-kind-icon">entity</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#entitypicture" class="tsd-kind-icon">entity<wbr>Picture</a>
+								<a href="switch.switch-1.html#entitypicture" class="tsd-kind-icon">entity<wbr>Picture</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#friendlyname" class="tsd-kind-icon">friendly<wbr>Name</a>
+								<a href="switch.switch-1.html#friendlyname" class="tsd-kind-icon">friendly<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#hidden" class="tsd-kind-icon">hidden</a>
+								<a href="switch.switch-1.html#hidden" class="tsd-kind-icon">hidden</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#icon" class="tsd-kind-icon">icon</a>
+								<a href="switch.switch-1.html#icon" class="tsd-kind-icon">icon</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="switch.switch-1.html#ison" class="tsd-kind-icon">is<wbr>On</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="switch.switch-1.html#isstandby" class="tsd-kind-icon">is<wbr>Standby</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#state" class="tsd-kind-icon">state</a>
+								<a href="switch.switch-1.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#supportedfeatures" class="tsd-kind-icon">supported<wbr>Features</a>
+								<a href="switch.switch-1.html#supportedfeatures" class="tsd-kind-icon">supported<wbr>Features</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="switch.switch-1.html#totalenergykwh" class="tsd-kind-icon">total<wbr>Energy<wbr>Kwh</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#unitofmeasurement" class="tsd-kind-icon">unit<wbr>OfMeasurement</a>
+								<a href="switch.switch-1.html#unitofmeasurement" class="tsd-kind-icon">unit<wbr>OfMeasurement</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#_trysubscribe" class="tsd-kind-icon">_try<wbr>Subscribe</a>
+								<a href="switch.switch-1.html#_trysubscribe" class="tsd-kind-icon">_try<wbr>Subscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#foreach" class="tsd-kind-icon">for<wbr>Each</a>
+								<a href="switch.switch-1.html#foreach" class="tsd-kind-icon">for<wbr>Each</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#getattribute" class="tsd-kind-icon">get<wbr>Attribute</a>
+								<a href="switch.switch-1.html#getattribute" class="tsd-kind-icon">get<wbr>Attribute</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#lift" class="tsd-kind-icon">lift</a>
+								<a href="switch.switch-1.html#lift" class="tsd-kind-icon">lift</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#pipe" class="tsd-kind-icon">pipe</a>
+								<a href="switch.switch-1.html#pipe" class="tsd-kind-icon">pipe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#subscribe" class="tsd-kind-icon">subscribe</a>
+								<a href="switch.switch-1.html#subscribe" class="tsd-kind-icon">subscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#topromise" class="tsd-kind-icon">to<wbr>Promise</a>
+								<a href="switch.switch-1.html#topromise" class="tsd-kind-icon">to<wbr>Promise</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_weather_weather_.weather.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+								<a href="switch.switch-1.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="switch.switch-1.html#toggle" class="tsd-kind-icon">toggle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="switch.switch-1.html#turnoff" class="tsd-kind-icon">turn<wbr>Off</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="switch.switch-1.html#turnon" class="tsd-kind-icon">turn<wbr>On</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/switch.switchservice.html" class="tsd-kind-icon">Switch<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/switch.html#switchentity" class="tsd-kind-icon">Switch<wbr>Entity</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -1729,16 +1847,16 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
