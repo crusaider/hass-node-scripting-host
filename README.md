@@ -1,4 +1,6 @@
 # hass-node-scripting-host
 
+[![Build Status](https://travis-ci.com/crusaider/hass-node-scripting-host.svg?branch=main)](https://travis-ci.com/crusaider/hass-node-scripting-host)
+
 A library to enable automation of / communication with a Home Assistant
 installation from a node application.
