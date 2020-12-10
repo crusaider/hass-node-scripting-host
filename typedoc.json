@@ -9,5 +9,5 @@
   ],
   "excludeNotExported": true,
   "stripInternal": true,
-  "name": ""
+  "name": "Home Assistant Node Scripting Host"
 }

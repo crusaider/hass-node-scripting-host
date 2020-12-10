@@ -1,12 +1,11 @@
 import { interval } from 'rxjs';
 import { take } from 'rxjs/operators';
-import { Light } from '..';
-import { Switch } from '..';
+import { IOnOffService } from '..';
 
 export function delayedAction(
   delay: number,
-  e: Switch | Light,
-  a: (e: Switch | Light) => void
+  e: IOnOffService | IOnOffService,
+  a: <T>(e: T) => void
 ): void {
   interval(delay)
     .pipe(take(1))

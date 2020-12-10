@@ -1,10 +1,11 @@
+import { IOnOffService, IToggleService } from '..';
 import { Entity } from '../HAInstance/Entity';
 import { LightEntity } from './LightEntity';
-import { LightService, LightServiceOptions } from './LightService';
+import { LightServiceOptions } from './LightServiceOptions';
 
 export class Light
   extends Entity<LightEntity, 'on' | 'off'>
-  implements LightService {
+  implements IOnOffService, IToggleService {
   get brightness(): Promise<number | undefined> {
     return this.getAttribute<number | undefined>('brightness');
   }
@@ -41,7 +42,7 @@ export class Light
     return this.getAttribute<number | undefined>('white_value');
   }
 
-  // Light service
+  // IOnOffService
 
   async turnOn(options?: LightServiceOptions): Promise<void> {
     await this.restClient.callService('light', 'turn_on', {
@@ -56,6 +57,8 @@ export class Light
       ...options
     });
   }
+
+  // IToggleService
 
   async toggle(options?: LightServiceOptions): Promise<void> {
     await this.restClient.callService('light', 'toggle', {

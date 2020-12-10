@@ -1,2 +1,1 @@
-// @internal
-export * from './RestClient';
+export * from './RESTClient';

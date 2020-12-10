@@ -1,11 +1,4 @@
-export interface LightService {
-  readonly turnOn: (options?: LightServiceOptions) => Promise<void>;
-  readonly turnOff: (options?: LightServiceOptions) => Promise<void>;
-  readonly toggle: (options?: LightServiceOptions) => Promise<void>;
-}
-
 export interface LightServiceOptions {
-  //readonly device_id: string;
   readonly transition?: number;
   readonly rgb_color?: [number, number, number];
   readonly color_name?: string;

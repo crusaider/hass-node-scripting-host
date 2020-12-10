@@ -1,18 +1,10 @@
+import { IOnOffService, IToggleService } from '..';
 import { Entity } from '../HAInstance/Entity';
-import { HAInstance } from '../HAInstance/HAInstance';
 import { SwitchEntity } from './SwitchEntity';
-import { SwitchService } from './SwitchService';
 
 export class Switch
   extends Entity<SwitchEntity, 'on' | 'off'>
-  implements SwitchService {
-  constructor(
-    protected readonly instance: HAInstance,
-    public readonly id: string
-  ) {
-    super(instance, id);
-  }
-
+  implements IOnOffService, IToggleService {
   get isOn(): Promise<boolean | undefined> {
     return this.getAttribute<boolean | undefined>('is_on');
   }
@@ -29,7 +21,7 @@ export class Switch
     return this.getAttribute<boolean | undefined>('is_standby');
   }
 
-  // SwitchService
+  // IOnOffService
 
   async turnOn(): Promise<void> {
     await this.restClient.callService('switch', 'turn_on', {
@@ -42,6 +34,8 @@ export class Switch
       entity_id: this.id
     });
   }
+
+  // IToggleService
 
   async toggle(): Promise<void> {
     await this.restClient.callService('switch', 'toggle', {

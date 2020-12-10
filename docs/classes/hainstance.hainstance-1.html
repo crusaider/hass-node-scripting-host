@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HAInstance | hass-node-scripting-host</title>
-	<meta name="description" content="Documentation for hass-node-scripting-host">
+	<title>HAInstance | Home Assistant Node Scripting Host</title>
+	<meta name="description" content="Documentation for Home Assistant Node Scripting Host">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">hass-node-scripting-host</a>
+					<a href="../index.html" class="title">Home Assistant Node Scripting Host</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -128,13 +128,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">new HAInstance<span class="tsd-signature-symbol">(</span>wsConnection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span>, rest<span class="tsd-signature-symbol">: </span><a href="restclient.restclient-1.html" class="tsd-signature-type">RESTClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hainstance.hainstance-1.html" class="tsd-signature-type">HAInstance</a></li>
+						<li class="tsd-signature tsd-kind-icon">new HAInstance<span class="tsd-signature-symbol">(</span>wsConnection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span>, rest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RESTClient</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hainstance.hainstance-1.html" class="tsd-signature-type">HAInstance</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L26">src/HAInstance/HAInstance.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L27">src/HAInstance/HAInstance.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -143,7 +143,7 @@
 									<h5>wsConnection: <span class="tsd-signature-type">Connection</span></h5>
 								</li>
 								<li>
-									<h5>rest: <a href="restclient.restclient-1.html" class="tsd-signature-type">RESTClient</a></h5>
+									<h5>rest: <span class="tsd-signature-type">RESTClient</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="hainstance.hainstance-1.html" class="tsd-signature-type">HAInstance</a></h4>
@@ -156,31 +156,27 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="rest" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> rest</h3>
-					<div class="tsd-signature tsd-kind-icon">rest<span class="tsd-signature-symbol">:</span> <a href="restclient.restclient-1.html" class="tsd-signature-type">RESTClient</a></div>
+					<div class="tsd-signature tsd-kind-icon">rest<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RESTClient</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L29">src/HAInstance/HAInstance.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L30">src/HAInstance/HAInstance.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="state_" class="tsd-anchor"></a>
 					<h3>state$</h3>
-					<div class="tsd-signature tsd-kind-icon">state$<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/reflection-1183.reflection-1.html#statechangedevent" class="tsd-signature-type">StateChangedEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HassEntity</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Observable&lt;StateChangedEvent&lt;HassEntity&gt;&gt;((subs) &#x3D;&gt; {void this.wsConnection.subscribeEvents((evt: StateChangedEvent&lt;HassEntity&gt;) &#x3D;&gt; {subs.next(evt);}, &#x27;state_changed&#x27;).then((f) &#x3D;&gt; (this.unSubscribe &#x3D; f));}).pipe(share())</span></div>
+					<div class="tsd-signature tsd-kind-icon">state$<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/reflection-1439.reflection-1.html#statechangedevent" class="tsd-signature-type">StateChangedEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HassEntity</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Observable&lt;StateChangedEvent&lt;HassEntity&gt;&gt;((subs) &#x3D;&gt; {void this.wsConnection.subscribeEvents((evt: StateChangedEvent&lt;HassEntity&gt;) &#x3D;&gt; {subs.next(evt);}, &#x27;state_changed&#x27;).then((f) &#x3D;&gt; (this.unSubscribe &#x3D; f));}).pipe(share())</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L63">src/HAInstance/HAInstance.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L60">src/HAInstance/HAInstance.ts:60</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A hot observable that will emit when any state changes.</p>
+							<p>A hot observable that will emit when there is a state change in the
+							Home Assistant system.</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>memberof</dt>
-							<dd><p>HAInstance</p>
-							</dd>
-						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -189,7 +185,7 @@
 					<div class="tsd-signature tsd-kind-icon">ws<wbr>Connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Connection</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L28">src/HAInstance/HAInstance.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L29">src/HAInstance/HAInstance.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +202,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L93">src/HAInstance/HAInstance.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L88">src/HAInstance/HAInstance.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,11 +210,6 @@
 									<p>Closes the connection to home assistant and unsubscribes all
 									observables.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>memberof</dt>
-									<dd><p>HAInstance</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
@@ -228,13 +219,13 @@
 					<a name="entitystate_" class="tsd-anchor"></a>
 					<h3>entity<wbr>State$</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">entity<wbr>State$&lt;T&gt;<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/reflection-1183.reflection-1.html#statechangedevent" class="tsd-signature-type">StateChangedEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">entity<wbr>State$&lt;T&gt;<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/reflection-1439.reflection-1.html#statechangedevent" class="tsd-signature-type">StateChangedEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L80">src/HAInstance/HAInstance.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L75">src/HAInstance/HAInstance.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -242,16 +233,11 @@
 									<p>Returns a hot observable that will emit when the state of the given
 									entity changes.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>memberof</dt>
-									<dd><p>HAInstance</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T</h4>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HassEntityBase</span></h4>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of the entity to monitor.</p>
 									</div>
@@ -266,7 +252,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/reflection-1183.reflection-1.html#statechangedevent" class="tsd-signature-type">StateChangedEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/reflection-1439.reflection-1.html#statechangedevent" class="tsd-signature-type">StateChangedEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -280,25 +266,44 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L98">src/HAInstance/HAInstance.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L105">src/HAInstance/HAInstance.ts:105</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a <a href="hainstance.entity.html">Entity</a> instance or a object of a derived class
+										representing the state of a given entity in the Home Assistant
+									system.</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>T<span class="tsd-signature-symbol">: </span><a href="hainstance.entity.html" class="tsd-signature-type">Entity</a> = <span class="tsd-signature-type">Entity</span></h4>
+									<div class="tsd-comment tsd-typography">
+										<p>A type derived from <a href="hainstance.entity.html">Entity</a> matching the type of
+										entity represented by the given <code>id</code>.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Entity id</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> type: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>constructor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional Class function of T , if omitted a object of
+										class <a href="hainstance.entity.html">Entity</a> will be returned.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>A object of type T.</p>
 						</li>
 					</ul>
 				</section>
@@ -312,36 +317,48 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L105">src/HAInstance/HAInstance.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L119">src/HAInstance/HAInstance.ts:119</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a object derived from <a href="reflection-1439.reflection-1.abstractservice.html">AbstractService</a> ready to send
+									service requests to the Home Assistant system.</p>
+								</div>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T<span class="tsd-signature-symbol">: </span><a href="reflection-1183.reflection-1.abstractservice.html" class="tsd-signature-type">AbstractService</a></h4>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="reflection-1439.reflection-1.abstractservice.html" class="tsd-signature-type">AbstractService</a></h4>
+									<div class="tsd-comment tsd-typography">
+										<p>A type derived from <a href="reflection-1439.reflection-1.abstractservice.html">AbstractService</a>.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>type: <span class="tsd-signature-symbol">{ </span>constructor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Class function of T.</p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>constructor<span class="tsd-signature-symbol">: </span>function</h5>
 											<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><a href="restclient.restclient-1.html" class="tsd-signature-type">RESTClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+												<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RESTClient</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L105">src/HAInstance/HAInstance.ts:105</a></li>
+															<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L119">src/HAInstance/HAInstance.ts:119</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>r: <a href="restclient.restclient-1.html" class="tsd-signature-type">RESTClient</a></h5>
+															<h5>r: <span class="tsd-signature-type">RESTClient</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
@@ -352,6 +369,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>A object of type T.</p>
 						</li>
 					</ul>
 				</section>
@@ -365,7 +383,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L56">src/HAInstance/HAInstance.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L54">src/HAInstance/HAInstance.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span></h4>
@@ -376,26 +394,19 @@
 					<a name="create" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-1183.reflection-1.html#accesstoken" class="tsd-signature-type">AccessToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="hainstance.hainstance-1.html" class="tsd-signature-type">HAInstance</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-1439.reflection-1.html#accesstoken" class="tsd-signature-type">AccessToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="hainstance.hainstance-1.html" class="tsd-signature-type">HAInstance</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/f551745/src/HAInstance/HAInstance.ts#L43">src/HAInstance/HAInstance.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/crusaider/hass-node-scripting-host/blob/4b8a72a/src/HAInstance/HAInstance.ts#L41">src/HAInstance/HAInstance.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Factory function creating new instances of the class.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>static</dt>
-									<dd></dd>
-									<dt>memberof</dt>
-									<dd><p>HAInstance</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -407,7 +418,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>token: <a href="../modules/reflection-1183.reflection-1.html#accesstoken" class="tsd-signature-type">AccessToken</a></h5>
+									<h5>token: <a href="../modules/reflection-1439.reflection-1.html#accesstoken" class="tsd-signature-type">AccessToken</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>A (long lived) token authorizing access
 										to the Home Assistant system.</p>
@@ -427,7 +438,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/reflection-1183.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
+						<a href="../modules/reflection-1439.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/hainstance.html">HAInstance</a>
@@ -436,13 +447,10 @@
 						<a href="../modules/light.html">Light</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/restclient.html">RESTClient</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/sensor.html">Sensor</a>
-					</li>
-					<li class=" tsd-kind-module">
 						<a href="../modules/services.html">Services</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/sun.html">Sun</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/switch.html">Switch</a>
@@ -499,9 +507,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/hainstance.html#createsocketfactory" class="tsd-kind-icon">create<wbr>Socket<wbr>Factory</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -518,7 +523,6 @@
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>

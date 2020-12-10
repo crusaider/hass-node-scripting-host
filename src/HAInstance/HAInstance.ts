@@ -1,7 +1,8 @@
 import {
   Connection,
   createConnection,
-  HassEntity
+  HassEntity,
+  HassEntityBase
 } from 'home-assistant-js-websocket';
 import { Observable } from 'rxjs';
 import { filter, map, share } from 'rxjs/operators';
@@ -32,13 +33,10 @@ export class HAInstance {
   /**
    * Factory function creating new instances of the class.
    *
-   * @static
-   * @param {string} host Hostname (and port) of the running home
+   * @param  host Hostname (and port) of the running home
    * assistant system to connect to.
-   * @param {AccessToken} token A (long lived) token authorizing access
+   * @param token A (long lived) token authorizing access
    * to the Home Assistant system.
-   * @returns {Promise<HAInstance>}
-   * @memberof HAInstance
    */
   public static async create(
     host: string,
@@ -56,9 +54,8 @@ export class HAInstance {
   private unSubscribe: () => void = () => undefined;
 
   /**
-   * A hot observable that will emit when any state changes.
-   *
-   * @memberof HAInstance
+   * A hot observable that will emit when there is a state change in the
+   * Home Assistant system.
    */
   state$ = new Observable<StateChangedEvent<HassEntity>>((subs) => {
     void this.wsConnection
@@ -73,11 +70,11 @@ export class HAInstance {
    * entity changes.
    *
    * @template T Type of the entity to monitor.
-   * @param {string} id Id of the entity to monitor.
-   * @returns {Observable<StateChangedEvent<T>>}
-   * @memberof HAInstance
+   * @param id Id of the entity to monitor.
    */
-  entityState$<T>(id: string): Observable<StateChangedEvent<T>> {
+  entityState$<T extends HassEntityBase>(
+    id: string
+  ): Observable<StateChangedEvent<T>> {
     return this.state$.pipe(
       map((e) => e as StateChangedEvent<T>),
       filter<StateChangedEvent<T>>((evt) => evt.data.entity_id === id)
@@ -87,21 +84,38 @@ export class HAInstance {
   /**
    * Closes the connection to home assistant and unsubscribes all
    * observables.
-   *
-   * @memberof HAInstance
    */
   close(): void {
     this.unSubscribe();
     this.wsConnection.close();
   }
 
+  /**
+   * Returns a {@link Entity} instance or a object of a derived class
+   * representing the state of a given entity in the Home Assistant
+   * system.
+   *
+   * @template T A type derived from {@link Entity} matching the type of
+   * entity represented by the given ```id```.
+   * @param  id Entity id
+   * @param  type Optional Class function of T , if omitted a object of
+   * class {@link Entity} will be returned.
+   * @returns A object of type T.
+   */
   getEntity<T extends Entity = Entity>(
     id: string,
     type?: { new (i: HAInstance, id: string): T }
   ): T {
     return type ? new type(this, id) : (new Entity(this, id) as T);
   }
-
+  /**
+   * Returns a object derived from {@link AbstractService} ready to send
+   * service requests to the Home Assistant system.
+   *
+   * @template T A type derived from {@link AbstractService}.
+   * @param  type Class function of T.
+   * @returns A object of type T.
+   */
   getService<T extends AbstractService>(type: { new (r: RESTClient): T }): T {
     return new type(this.rest);
   }

@@ -1,7 +1,12 @@
-import { HassEventBase } from 'home-assistant-js-websocket';
+import { HassEntityBase, HassEventBase } from 'home-assistant-js-websocket';
 
-
-export type StateChangedEvent<T> = HassEventBase & {
+/**
+ * Custom version of the StateChangedEvent suppporting a gneric type of
+ * the entity that has changed state.
+ *
+ * @template T Entity tape of the entity.
+ */
+export type StateChangedEvent<T extends HassEntityBase> = HassEventBase & {
   event_type: 'state_changed';
   data: {
     entity_id: string;

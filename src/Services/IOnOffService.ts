@@ -1,7 +1,4 @@
-export interface SwitchService {
+export interface IOnOffService {
   readonly turnOn: () => Promise<void>;
   readonly turnOff: () => Promise<void>;
-  readonly toggle: () => Promise<void>;
 }
-
-

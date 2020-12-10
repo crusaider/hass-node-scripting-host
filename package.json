@@ -15,6 +15,7 @@
   "files": [
     "dist",
     "dist/Samples",
+    "!sample-code",
     "!**/*.map",
     "!**/*.spec.*"
   ],
@@ -27,7 +28,7 @@
     "test": "npm run lint && npm run test:unit",
     "watch": "nodemon",
     "build": "tsc",
-    "prepublishOnly": "npm run clean && npm run test && npm run build",
+    "prepublishOnly": "npm run clean && npm run test && npm run build && npm run docs",
     "docs": "typedoc"
   },
   "dependencies": {
@@ -60,6 +61,7 @@
     "tslint-config-airbnb": "^5.11.2",
     "typedoc": "^0.19.2",
     "typedoc-plugin-external-module-name": "^4.0.3",
+    "typedoc-plugin-jekyll": "^0.1.0",
     "typescript": "^4.1.2"
   },
   "husky": {

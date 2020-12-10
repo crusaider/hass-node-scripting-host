@@ -1,7 +1,7 @@
 import * as env from 'dotenv';
-import { HAInstance, Switch } from '..';
-import { delayedAction } from './delayedAction';
+import { HAInstance } from '..';
 import { dimLight } from './dimLight';
+import { sun } from './sun';
 
 env.config();
 
@@ -13,14 +13,17 @@ async function main() {
     process.env.HASS_TOKEN as string
   );
 
+  await sun(instance);
+
   if (FALSE) {
+    /*
     delayedAction(
       1000,
       instance.getEntity<Switch>('switch.skrivbord', Switch),
-      (e) => void e.toggle()
-    );
+      //async <IToggleService>(e: IToggleService) => void e.toggle()
+    );*/
+    await dimLight(instance, true);
   }
-  await dimLight(instance, true);
 
   instance.close();
 }

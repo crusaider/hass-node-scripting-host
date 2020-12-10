@@ -1,21 +1,27 @@
 import { HaWebSocket } from 'home-assistant-js-websocket';
 import * as WebSocket from 'ws';
 import { AccessToken } from '../AccessToken';
-// @internal
+
 type MessageType = 'auth_required' | 'auth' | 'auth_ok' | 'auth_invalid';
 interface MessageBase {
   readonly type: MessageType;
 }
 
-// @internal
 type ServerMessage = MessageBase & {
   readonly ha_version: string;
 };
 
-// @internal
 type AuthMessage = { type: 'auth'; access_token: AccessToken } & MessageBase;
 
-// @internal
+/**
+ * A factory function that returns a function that will open a socket to
+ * the Home Assistant system and authenticate using the supplied token.
+ *
+ * @returns A function that in turn returns a Promise that will resolve
+ * into a {@link HaWebsocket} once the connection has been authenticated.
+ *
+ * @internal
+ **/
 export function createSocketFactory(
   url: string,
   token: AccessToken

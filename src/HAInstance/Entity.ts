@@ -5,6 +5,18 @@ import { RESTClient } from '../RestClient';
 import { attribute, newState, state } from '../rx-operators';
 import { HAInstance } from './HAInstance';
 
+/**
+ * Class representing entities on the Home Assistant system. This
+ * class gives a generic view of all entities providing
+ * functionality to monitor state changes as well as querying current
+ * state disregarding.
+ *
+ * Objects of this call can be treated as a @{link Observable}.*
+ *
+ * @template T Type of the entity
+ * @template S Type of the entity ```state``` property - represented as a
+ * string in Home Assistant.
+ */
 export class Entity<
   T extends HassEntityBase = HassEntity,
   S = string
@@ -14,28 +26,14 @@ export class Entity<
     public readonly id: string
   ) {
     super();
+
+    // This is a bit of a hack but it works, at least right now:-)
     this.source = this.instance.entityState$<T>(id).pipe(
       newState(),
       filter<T>(Boolean),
       tap<T>((e) => (this._entity = e))
     );
 
-    /*
-    super((subs) => {
-      this.instance
-        .entityState$<T>(id)
-        .pipe(
-          newState(),
-          filter<T>(Boolean),
-          tap<T>((e) => (this._entity = e))
-        )
-        .subscribe({
-          next: (r) => subs.next(r),
-          error: (e) => subs.error(e),
-          complete: () => subs.complete()
-        });
-    });
-*/
     this._entity = undefined;
     this.restClient = instance.rest;
   }
@@ -47,9 +45,7 @@ export class Entity<
   /**
    * The last known values of the Entity.
    *
-   * @readonly
    * @type {Promise<T>}
-   * @memberof Entity
    */
   get entity(): Promise<T> {
     return this._entity
@@ -60,14 +56,18 @@ export class Entity<
   /**
    * The last known device state.
    *
-   * @readonly
    * @type {Promise<S>}
-   * @memberof Entity
    */
   get state(): Promise<S> {
     return from(this.entity).pipe(state<S>()).toPromise();
   }
 
+  /**
+   * Get the last known value of a entity attribute.
+   *
+   * @template T Type of entity
+   * @param  key Name (key) of attribute
+   */
   getAttribute<T>(key: string): Promise<T> {
     return from(this.entity).pipe(attribute<T>(key)).toPromise();
   }
@@ -75,7 +75,6 @@ export class Entity<
   /**
    * Emits the state whenever it changes.
    *
-   * @memberof Entity
    */
   readonly state$ = this.pipe(state<S>());
 
@@ -115,6 +114,13 @@ export class Entity<
 
   // Misc
 
+  /**
+   * Returns a JSON string representation of the last known state of
+   * the entity.
+   *
+   * @param  [pretty=true] Optional value, if true the string will be
+   * pretty printed. {@see JSON.stringify} Defaults to ***true***.
+   */
   async toString(pretty = true): Promise<string> {
     const e = await this.entity;
     return JSON.stringify(e, undefined, pretty ? 2 : undefined);

@@ -3,10 +3,17 @@ import {
   HassEntityBase
 } from 'home-assistant-js-websocket';
 
+/**
+ * Properties of a Light entity.
+ *
+ * See: (Light)[https://developers.home-assistant.io/docs/core/entity/light]
+ */
 export type LightEntity = HassEntityBase & {
   readonly attributes: HassEntityAttributeBase & {
-    readonly brightness?: number; //int	None	Return the brightness of this light between 0..255
-    readonly color_temp?: number; //int	None	Return the CT color value in mireds.
+    //int	None	Return the brightness of this light between 0..255
+    readonly brightness?: number;
+    //int	None	Return the CT color value in mireds.
+    readonly color_temp?: number;
     readonly effect?: string; //String	None	Return the current effect.
     readonly effect_list?: string[]; //list	None	Return the list of supported effects.
     readonly hs_color?: [number, number]; //list	None	Return the hue and saturation color value [float, float].
