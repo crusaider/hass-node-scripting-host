@@ -1,6 +1,6 @@
 {
   "name": "hass-node-scripting-host",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Home Assistant scripting from Node applications.",
   "keywords": [
     "home-assistant",
@@ -66,8 +66,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
