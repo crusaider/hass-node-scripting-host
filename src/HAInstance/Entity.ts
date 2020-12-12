@@ -1,7 +1,7 @@
 import { HassEntity, HassEntityBase } from 'home-assistant-js-websocket';
 import { from, Observable } from 'rxjs';
 import { filter, tap } from 'rxjs/operators';
-import { RESTClient } from '../RestClient';
+import { RESTClient } from '../RESTClient';
 import { attribute, newState, state } from '../rx-operators';
 import { HAInstance } from './HAInstance';
 

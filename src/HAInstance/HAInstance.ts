@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 import { filter, map, share } from 'rxjs/operators';
 import { AbstractService } from '../AbstractService';
 import { AccessToken } from '../AccessToken';
-import { RESTClient } from '../RestClient';
+import { RESTClient } from '../RESTClient';
 import { StateChangedEvent } from '../StateChangedEvent';
 import { createSocketFactory } from './createSocketFactory';
 import { Entity } from './Entity';
