@@ -1,6 +1,6 @@
 # hass-node-scripting-host
 
-[![Build Status](https://travis-ci.com/crusaider/hass-node-scripting-host.svg?branch=main)](https://travis-ci.com/crusaider/hass-node-scripting-host)
+![Build status](https://github.com/crusaider/hass-node-scripting-host/workflows/Release/badge.svg?branch=main)
 
 > A library to enable automation of / communication with a Home Assistant
 > installation from a node application.
@@ -62,11 +62,10 @@ sun.state$
   .subscribe(() => void patioLight.turnOn());
 ```
 
-Classes derrived from `Entity` are
-Observables that exposes a set of different streams that emits when the state of
-the entity changes in Home Assistant. They also implement relevant services for
-the different entity types making it possible to change the state of the
-entities.
+Classes derrived from `Entity` are Observables that exposes a set of different
+streams that emits when the state of the entity changes in Home Assistant. They
+also implement relevant services for the different entity types making it
+possible to change the state of the entities.
 
 ## License
 
