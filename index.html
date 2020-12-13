@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Home Assistant Node Scripting Host</title>
+	<meta name="description" content="Documentation for Home Assistant Node Scripting Host">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">Home Assistant Node Scripting Host</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>Home Assistant Node Scripting Host</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#hass-node-scripting-host" id="hass-node-scripting-host" style="color: inherit; text-decoration: none;">
+					<h1>hass-node-scripting-host</h1>
+				</a>
+				<p><img src="https://github.com/crusaider/hass-node-scripting-host/workflows/Release/badge.svg?branch=main" alt="Build status"></p>
+				<blockquote>
+					<p>A library to enable automation of / communication with a Home Assistant
+					installation from a node application.</p>
+				</blockquote>
+				<a href="#purpose" id="purpose" style="color: inherit; text-decoration: none;">
+					<h2>Purpose</h2>
+				</a>
+				<p>This library makes it possible to, from a node application communicate with one
+					or more <a href="https://www.home-assistant.io/">Home Assistant</a> systems. Based on the
+					library any type of node application can query the state of a Home Assistant,
+				subscribe to state changes and and call services in the system.</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<pre><code>npm i hass-<span class="hljs-keyword">node</span><span class="hljs-title">-scripting-host</span></code></pre>
+				<a href="#prerequisites" id="prerequisites" style="color: inherit; text-decoration: none;">
+					<h2>Prerequisites</h2>
+				</a>
+				<p>The home assistant system will have to expose the
+					<a href="https://developers.home-assistant.io/docs/api/rest/">REST API</a> as well as the
+					<a href="https://developers.home-assistant.io/docs/api/websocket">WebSocket API</a>. Booth
+				are enabled by default of the Web UI is enabled.</p>
+				<p>To access the system you will have to generate a
+				<a href="https://www.home-assistant.io/docs/authentication/"><em>long lived access token</em></a>.</p>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h2>Documentation</h2>
+				</a>
+				<p><a href="https://crusaider.github.io/hass-node-scripting-host/index.html">The generated TypeDoc site</a></p>
+				<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+					<h2>Example</h2>
+				</a>
+				<a href="#connect-to-home-assistant" id="connect-to-home-assistant" style="color: inherit; text-decoration: none;">
+					<h3>Connect to home assistant</h3>
+				</a>
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">await</span> HAInstance.create(
+  <span class="hljs-string">&#x27;hostname:port&#x27;</span>,
+  <span class="hljs-string">&#x27;long-lived-access-token&#x27;</span>
+);</code></pre>
+				<p>Get object instances representing entities in Home Assistant.</p>
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> sun = instance.getEntity&lt;Sun&gt;(Sun.ENTITY_ID, Sun);
+<span class="hljs-keyword">const</span> patioLight = instance.getEntity&lt;Light&gt;(<span class="hljs-string">&#x27;light.patio&#x27;</span>, Light);</code></pre>
+				<p>Turn the patio light on whe the sun sets.</p>
+				<pre><code class="language-ts">sun.state$
+  .pipe(
+    startWith(<span class="hljs-keyword">await</span> sun.state),
+    distinctUntilChanged(),
+    filter(<span class="hljs-function">(<span class="hljs-params">s</span>) =&gt;</span> s === <span class="hljs-string">&#x27;below_horizon&#x27;</span>)
+  )
+  .subscribe(<span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span> patioLight.turnOn());</code></pre>
+				<p>Classes derrived from <code>Entity</code> are Observables that exposes a set of different
+					streams that emits when the state of the entity changes in Home Assistant. They
+					also implement relevant services for the different entity types making it
+				possible to change the state of the entities.</p>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p>MIT License</p>
+				<p>Copyright (c) 2020 Jonas Andreasson</p>
+				<p>Permission is hereby granted, free of charge, to any person obtaining a copy of
+					this software and associated documentation files (the &quot;Software&quot;), to deal in
+					the Software without restriction, including without limitation the rights to
+					use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+					the Software, and to permit persons to whom the Software is furnished to do so,
+				subject to the following conditions:</p>
+				<p>The above copyright notice and this permission notice shall be included in all
+				copies or substantial portions of the Software.</p>
+				<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+					IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+					FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+					COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+					IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+				CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="modules/reflection-1439.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/hainstance.html">HAInstance</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/light.html">Light</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/services.html">Services</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/sun.html">Sun</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/switch.html">Switch</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/weather.html">Weather</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/rx_operators.html">rx-<wbr>operators</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
