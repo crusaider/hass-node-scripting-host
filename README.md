@@ -14,7 +14,7 @@ subscribe to state changes and and call services in the system.
 
 ## Installation
 
-```
+```sh
 npm i hass-node-scripting-host
 ```
 
@@ -30,11 +30,13 @@ To access the system you will have to generate a
 
 ## Documentation
 
+[Github Repo](https://github.com/crusaider/hass-node-scripting-host)
+
 [The generated TypeDoc site](https://crusaider.github.io/hass-node-scripting-host/index.html)
 
 ## Example
 
-### Connect to home assistant
+### Connect to Home Assistant
 
 ```ts
 const instance = await HAInstance.create(

@@ -1,11 +1,12 @@
 {
   "name": "hass-node-scripting-host",
-  "version": "0.0.2-3",
+  "version": "0.0.3",
   "description": "Home Assistant scripting from Node applications.",
   "keywords": [
     "home-assistant",
-    "typescript",
-    "node"
+    "node",
+    "home-automation",
+    "automation"
   ],
   "author": "Jonas Andreasson <jonas.m.andreasson@gmail.com",
   "license": "MIT",
@@ -14,7 +15,7 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
-    "dist/Samples",
+    "!dist/Samples",
     "!sample-code",
     "!**/*.map",
     "!**/*.spec.*"
@@ -33,7 +34,6 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "dotenv": "^8.2.0",
     "home-assistant-js-websocket": "^5.7.0",
     "rxjs": "^6.6.3",
     "ws": "^7.4.0"
@@ -42,12 +42,12 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@types/axios": "^0.14.0",
-    "@types/dotenv": "^8.2.0",
     "@types/jest": "^26.0.16",
     "@types/node": "^14.14.10",
     "@types/ws": "^7.4.0",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
+    "dotenv": "^8.2.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
