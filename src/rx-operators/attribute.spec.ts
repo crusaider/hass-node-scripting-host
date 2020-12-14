@@ -1,35 +1,29 @@
-import { HassEntity } from 'home-assistant-js-websocket';
-import { of } from 'rxjs';
+import { HassEntity, HassEntityBase } from 'home-assistant-js-websocket';
+import { Mock } from 'ts-mockery';
+import { testScheduler } from '../TestUtils';
 import { attribute } from './attribute';
 
-describe('attribute', () => {
-  const baseState: HassEntity = {
-    entity_id: 'id',
-    state: 'state',
-    last_changed: 'changed',
-    last_updated: 'updated',
-    attributes: {
-      attr1: 123,
-      attr2: 'string'
-    },
-    context: {
-      id: 'id',
-      user_id: 'user_id'
-    }
-  };
+describe('attribute operator', () => {
+  it('string attribute', () => {
+    testScheduler.run((helpers) => {
+      const { hot, expectObservable } = helpers;
 
-  const source$ = of<HassEntity>(baseState);
-
-  it('should give number value', (done) => {
-    source$.pipe(attribute<number>('attr1')).subscribe((value) => {
-      expect(value).toEqual(123);
-      done();
+      const res$ = hot<HassEntityBase>('a', {
+        a: Mock.of<HassEntity>({ attributes: { attr1: 'value1' } }),
+        b: Mock.of<HassEntity>()
+      }).pipe(attribute<string>('attr1'));
+      expectObservable(res$).toBe('a', { a: 'value1', b: undefined });
     });
   });
-  it('should give string value', (done) => {
-    source$.pipe(attribute<number>('attr2')).subscribe((value) => {
-      expect(value).toMatch('string');
-      done();
+  it('string attribute', () => {
+    testScheduler.run((helpers) => {
+      const { hot, expectObservable } = helpers;
+
+      const res$ = hot<HassEntityBase>('a', {
+        a: Mock.of<HassEntity>({ attributes: { attr1: 1 } }),
+        b: Mock.of<HassEntity>()
+      }).pipe(attribute<number>('attr1'));
+      expectObservable(res$).toBe('a', { a: 1, b: undefined });
     });
   });
 });

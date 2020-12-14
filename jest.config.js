@@ -4,4 +4,5 @@ module.exports = {
   collectCoverageFrom: ['src/**/*.ts', '!**/*.d.ts'],
   testEnvironment: 'node',
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/dist/'],
+  setupFiles: [ './jest-setup.ts']
 };
