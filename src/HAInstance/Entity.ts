@@ -19,7 +19,7 @@ import { HAInstance } from './HAInstance';
  */
 export class Entity<
   T extends HassEntityBase = HassEntity,
-  S = string
+  S extends string = string
 > extends Observable<T> {
   constructor(
     protected readonly instance: HAInstance,
