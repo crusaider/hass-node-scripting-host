@@ -2,6 +2,7 @@
 
 ![Build status](https://github.com/crusaider/hass-node-scripting-host/workflows/Release/badge.svg)
 ![Build status](https://github.com/crusaider/hass-node-scripting-host/workflows/Build%20on%20push/badge.svg?branch=main)
+[![npm version](https://badge.fury.io/js/hass-node-scripting-host.svg)](https://badge.fury.io/js/hass-node-scripting-host)
 
 > A library to enable automation of / communication with a Home Assistant
 > installation from a node application.

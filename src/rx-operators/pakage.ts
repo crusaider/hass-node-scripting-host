@@ -1,5 +1,5 @@
 /**
- * A set of RXJS pipe-able operator to operator on streams of events from
+ * A set of RXJS pipe-able operators to operator on streams of events from
  * Home Assistant.
  * @packageDocumentation
  */

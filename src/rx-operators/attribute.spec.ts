@@ -15,7 +15,7 @@ describe('attribute operator', () => {
       expectObservable(res$).toBe('a', { a: 'value1', b: undefined });
     });
   });
-  it('string attribute', () => {
+  it('number attribute', () => {
     testScheduler.run((helpers) => {
       const { hot, expectObservable } = helpers;
 

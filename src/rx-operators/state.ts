@@ -9,6 +9,9 @@ import { pluck } from 'rxjs/operators';
  * string in Home Assistant)
  * @returns The state value
  */
-export function state<ST>(): OperatorFunction<HassEntityBase, ST> {
+export function state<ST extends string = string>(): OperatorFunction<
+  HassEntityBase,
+  ST
+> {
   return (input$) => input$.pipe(pluck<HassEntityBase, ST>('state'));
 }
